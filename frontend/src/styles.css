@@ -1,0 +1,53 @@
+body{ font-family: Arial, sans-serif; background:#f7f7f8; margin:0; padding:20px; }
+.container{ max-width:1200px; margin:0 auto; background:white; padding:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05) }
+.toolbar{ display:flex; align-items:center; gap:12px; padding:12px 16px; border-bottom:1px solid #eee; background:linear-gradient(90deg, #ffffff, #f8fafc) }
+.searchBar{ display:flex; gap:8px }
+.searchBar input{ flex:1; padding:10px; border:1px solid var(--border); border-radius:8px }
+.searchBar input:focus{ outline:2px solid rgba(79,70,229,.25) }
+.mainGrid{ display:grid; grid-template-columns:260px 1fr; gap:0 }
+.filters{ background:#fafafa; padding:12px; border-right:1px solid #eee }
+.leftNav{ background:#f8fafc; color:#1f2937; height:100%; padding:16px; border-right:1px solid var(--border) }
+.leftNav .brand{ font-weight:700; margin-bottom:12px }
+.leftNav .section{ margin-top:16px }
+.leftNav .sectionTitle{ font-size:12px; color:#64748b; margin-bottom:6px; text-transform:uppercase }
+.leftNav nav{ display:flex; flex-direction:column; gap:8px }
+.leftNav a{ color:#0f172a; text-decoration:none; font-size:14px; padding:6px 8px; border-radius:6px }
+.leftNav a:hover{ background:rgba(79,70,229,.08) }
+.filters label{ display:block; margin-bottom:8px; font-size:13px }
+.filters input{ width:100%; padding:6px; border:1px solid #ddd; border-radius:4px }
+.content{ padding:16px }
+.summaryBar{ display:flex; gap:12px; margin-bottom:10px }
+.stat{ background:#f8fafc; border:1px solid #eef2f7; border-radius:8px; padding:10px 12px; display:flex; flex-direction:column; min-width:160px }
+.statLabel{ font-size:12px; color:#667085 }
+.statValue{ font-size:18px; font-weight:600; color:#111 }
+.controls{ margin-bottom:12px; display:flex; justify-content:flex-end; gap:8px; align-items:center }
+.table{ width:100%; border-collapse:collapse }
+.table th, .table td{ text-align:left; padding:10px; border-bottom:1px solid #eee }
+.table thead th{ background:#f9fafb; color:#111 }
+.table.sticky thead tr{ position:sticky; top:0; background:#fff; z-index:1 }
+.skeleton td{ color:#999 }
+.pagination{ display:flex; gap:8px; align-items:center; margin-top:10px; justify-content:center }
+.pagination .btn{ padding:6px 10px }
+.pagination .btn-page.active{ background:var(--primary); color:#fff; border-color:var(--primary) }
+:root{
+  --primary:#4f46e5; /* indigo */
+  --secondary:#0ea5e9; /* sky */
+  --bg:#f7f7f8;
+  --text:#0f172a;
+  --muted:#64748b;
+  --border:#e5e7eb;
+}
+.btn{ padding:8px 12px; border:1px solid var(--border); background:#fff; color:var(--text); border-radius:8px; cursor:pointer; transition:all .2s ease }
+.btn:hover{ box-shadow:0 2px 6px rgba(0,0,0,.08); transform:translateY(-1px) }
+.btn:disabled{ opacity:.6; cursor:not-allowed }
+.btn-primary{ background:var(--primary); color:#fff; border-color:var(--primary) }
+.btn-primary:hover{ background:#4338ca; border-color:#4338ca }
+.btn-secondary{ background:var(--secondary); color:#fff; border-color:var(--secondary) }
+.btn-outline{ background:transparent; color:var(--primary); border-color:var(--primary) }
+.btn-outline:hover{ background:rgba(79,70,229,.08) }
+.topFilters{ display:flex; flex-direction:column; gap:8px; margin-bottom:12px }
+.topFilters.twoRows .row{ display:flex; flex-wrap:wrap; gap:8px }
+.pill{ display:flex; align-items:center; gap:6px; background:#f9fafb; border:1px solid var(--border); border-radius:8px; padding:6px 8px }
+.pill span{ font-size:11px; color:var(--muted) }
+.pill select,.pill input{ padding:5px 6px; border:1px solid var(--border); border-radius:6px; font-size:12px; min-width:110px; max-width:150px }
+.btn-sm{ padding:4px 8px; font-size:12px }
